@@ -1,8 +1,13 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/main/Main";
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Crypto Price Tracker</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
